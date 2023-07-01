@@ -1,5 +1,5 @@
 <script>
-	import uuid from './uuid.svelte';
+	import Uuid from './uuid.svelte';
 </script>
 
-<uuid initialUuidCount=5 />
+<Uuid initialUuidCount=5 />
