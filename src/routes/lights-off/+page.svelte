@@ -11,11 +11,15 @@
     let hasWon = false;
 
     let state = "";
+
+    let moves = 0;
     
     function handleClick(x, y) {
         if (hasWon) {
             return;
         }
+
+        moves++;
         
         tryClick(x, y);
         tryClick(x-1, y);
@@ -56,6 +60,8 @@
             }
             checkGameState();
         } while (hasWon)
+
+        moves = 0;
     }
 
     newGame();
@@ -80,7 +86,7 @@
 {/if}
     
 {#if hasWon}
-    <p>You win! 🥳</p>
+    <p>You won in only {moves} moves! 🥳</p>
     <button on:click={newGame}>New Game</button>
 {/if}
 
