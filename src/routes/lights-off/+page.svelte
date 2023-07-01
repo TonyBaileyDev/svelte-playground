@@ -1,5 +1,5 @@
 <script>
-	import Light from './Light.svelte';
+	import Light from './light.svelte';
 
 	let debug = false;
 	
