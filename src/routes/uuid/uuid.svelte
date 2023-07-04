@@ -35,7 +35,7 @@
 
 
 {#if showDescription}
-	<h1>UUID Generator</h1>
+	<h2>UUID Generator</h2>
 	<p>Generate some UUIDs.</p>
 {/if}
 

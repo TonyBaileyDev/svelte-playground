@@ -67,7 +67,7 @@
     newGame();
 </script>
 
-<h1>Lights off!</h1>
+<h2>Lights off!</h2>
 <p>Turn off all the lights to win.</p>
 <div class="grid">
     <Light on={lights[0][0]} on:click={() => handleClick(0, 0)} />
